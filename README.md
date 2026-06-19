@@ -9,3 +9,4 @@ https://u17dq7.csb.app/
 
 
 static url:
+http://portfolio-website-sabyasachi.s3-website-us-east-1.amazonaws.com/
