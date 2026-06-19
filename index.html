@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8" />
+    <title>Euphoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" container="width=device-width,intial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gulzar&family=Nunito+Sans:ital@1&family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="t.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- navbar -->
+      <div id="top-tabs">
+        <div data-activate="#home"></div>
+        <div data-activate="#about"></div>
+        <div data-activate="#work"></div>
+        <div data-activate="#contact"></div>
+      </div>
+
+      <!-- content area -->
+      <div id="content-area">
+        <div id="home">
+          <div>
+            <div id="intro">
+              <h2 class="static-text">I'am</h2>
+              <ul class="dynamic-text">
+                <li><span>Sabyasachi Dutta</span></li>
+              </ul>
+            </div>
+            <div id="my-bg"></div>
+          </div>
+        </div>
+
+        <div id="about">
+          <pre id="main">
+            MATRIX-PORTFOLIO(2.0)<ins><span id="pow-txt">Hi</span></ins>
+            <span id="tagline">Welcome to Euphoria<br>
+              Choose your pill</span>
+          </pre>
+          <button
+            id="red"
+            style="background-color: #ff0000;"
+            href="assets/Sabyasachi_dutta.docx"
+            download
+          >
+            Red
+          </button>
+          <button id="blue" style="background-color: #6f00ff;" onclick="foo();">
+            Blue
+          </button>
+          <script>
+            function foo() {
+              alert("Did you just deny to save the world?");
+            }
+          </script>
+        </div>
+
+        <div id="work">
+          <div id="life">
+            <div class="carousel-container">
+              <div class="carousel">
+                <!-- work passed to script.js -->
+              </div>
+            </div>
+            <script src="script.js"></script>
+          </div>
+        </div>
+
+        <div id="contact">
+          <div id="email">
+            <h2 id="emailh2">Contact</h2>
+            <form
+              id="form"
+              action="mailto:bbpond457@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label id="labelc" for="fname">First name:</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                value="Your first name"
+              /><br />
+              <label id="labelc" for="lname">Last name:</label><br />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                value="Your last name"
+              /><br /><br />
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+            <div id="connectbuttons">
+              <button
+                style="background-color: #5ba35b; border-radius: 5px;"
+                id="GITHUB"
+                onclick="window.location.href='https://github.com/ENSANITYel';"
+              >
+                GITHUB
+              </button>
+              <button
+                style="background-color: #5ba35b; border-radius: 5px;"
+                id="Linkkedin"
+                onclick="window.location.href='https://www.linkedin.com/in/sabyasachi-dutta-885a13229';"
+              >
+                LINKEDIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/server.js"></script>
+  </body>
+</html>
